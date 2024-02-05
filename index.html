@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Ping Pong - JS Practice Game</title>
+  </head>
+  <body>
+    <div class="container" style="width: 30%;">
+        <div class="card">
+            <header class="card-header">
+              <h1 class="card-header-title">
+                Ping Pong - JS Practice Game    
+              </h1>
+            </header>
+            <div class="card-content">
+                <img class="card-image" src="https://images.unsplash.com/photo-1624936188350-883a61a44116?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ping Pong">
+              <div class="content">
+                <p></p>
+                <h2>Let's play Ping Pong! Click on your Rounds.</h2>
+                <select class="dropdown-content" id="playto">
+                    <option value="0">Choose your Rounds</option>
+                    <option value="3">Playing to: 3</option>
+                    <option value="5">Playing to: 5</option>
+                    <option value="7">Playing to: 7</option>
+                    <option value="10">Playing to: 10</option>
+                </select>
+                <h2><span id = "score1">0</span> to <span id="score2">0</span></h2>
+              </div>
+              <h2 style="font-size: medium;">Winner: <span id="winner">TBD</span></h2>
+            </div>
+            <footer class="card-footer">
+                <div class="buttons">
+                    <button class="button is-primary is-medium" id="player1">+1 Player-1</button>
+                    <button class="button is-info is-medium" id="player2">+1 Player-2</button>
+                    <button class="button is-danger is-medium" id="reset">Reset</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
